@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>瀬尾ひなの | Hinano Seo — Global Health Researcher</title>
+<meta name="description" content="瀬尾ひなの（Hinano Seo）のポートフォリオ。長崎大学大学院 熱帯医学・グローバルヘルス研究科（TMGH）公衆衛生学修士（MPH）修了（2026年9月）、トビタテ！留学JAPAN 17期生。グローバルヘルス・医療安全・プラネタリーヘルス研究者。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+/* ===== Design tokens: Digital Agency Design System (DADS) values ===== */
+:root{
+  --blue-50:#e8f1fe; --blue-100:#d9e6ff; --blue-200:#c5d7fb; --blue-900:#0017c1; --blue-1000:#00118f; --blue-1100:#000071; --blue-1200:#000060;
+  --green-50:#e6f5ec; --green-800:#197a4b; --green-900:#115a36;
+  --yellow-50:#fbf5e0; --yellow-300:#ffd43d; --yellow-1100:#6e5600;
+  --orange-50:#ffeee2; --orange-800:#c74700; --orange-900:#ac3e00;
+  --magenta-900:#8b008b;
+  --gray-50:#f2f2f2; --gray-100:#e6e6e6; --gray-200:#ccc; --gray-300:#b3b3b3; --gray-420:#949494; --gray-600:#666; --gray-700:#4d4d4d; --gray-800:#333; --gray-900:#1a1a1a;
+  --white:#fff; --black:#000;
+  --elevation-1:0 2px 8px 1px #0000001a,0 1px 5px 0 #0000004d;
+  --font:"Noto Sans JP","Noto Sans",sans-serif;
+  --content:1080px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:16px}
+body{margin:0;font-family:var(--font);font-size:1rem;line-height:1.7;font-weight:400;letter-spacing:.02em;color:var(--gray-900);background:var(--white);text-spacing-trim:trim-start}
+h1,h2,h3,h4,p,ul,ol,dl,dd,figure{margin:0;padding:0}
+ul,ol{list-style:none}
+:where(a):any-link{color:var(--blue-1000);text-underline-offset:.1875rem;text-decoration:underline .0625rem}
+a:hover{color:var(--blue-1100);text-decoration-thickness:.1875rem}
+a:active{color:var(--orange-800)}
+a.plain{color:inherit;text-decoration:none}
+a.plain:hover{text-decoration:underline;text-decoration-thickness:.0625rem}
+:focus-visible{outline:.25rem solid var(--black);outline-offset:.125rem;box-shadow:0 0 0 .125rem var(--yellow-300);border-radius:.25rem}
+a:focus-visible,summary:focus-visible{background-color:var(--yellow-300);color:var(--black)}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:absolute;top:.375rem;left:.375rem;transform:translateY(-200%);background:var(--yellow-300);color:var(--black)!important;padding:.25rem .75rem;font-weight:700;z-index:20;border-radius:.375rem}
+.skip:focus{transform:none}
+.wrap{max-width:calc(var(--content) + 2rem);margin:0 auto;padding:0 1rem}
+
+/* ===== Header ===== */
+.site-header{border-bottom:1px solid var(--gray-300);background:var(--white)}
+.site-header .top{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 0}
+.brand{font-weight:700;font-size:1.25rem;line-height:1.5;text-decoration:none!important;color:var(--gray-900)!important;border-radius:.25rem}
+.brand small{display:block;font-size:.875rem;font-weight:400;color:var(--gray-700);line-height:1.4}
+.langswitch{display:inline-flex;border:1px solid var(--gray-420);border-radius:.5rem;overflow:hidden}
+.langswitch button{font:inherit;font-size:.875rem;letter-spacing:.02em;min-width:3.25rem;min-height:2.75rem;padding:0 .75rem;border:0;background:var(--white);color:var(--blue-900);cursor:pointer}
+.langswitch button+button{border-left:1px solid var(--gray-420)}
+.langswitch button[aria-pressed="true"]{background:var(--blue-900);color:var(--white);font-weight:700}
+.langswitch button:not([aria-pressed="true"]):hover{background:var(--blue-50)}
+.langswitch button:focus-visible{border-radius:.25rem}
+.gnav ul{display:flex;flex-wrap:wrap;column-gap:.25rem}
+.gnav a{display:block;padding:.5rem .75rem;font-size:.9375rem;color:var(--gray-900)!important;text-decoration:none;border-bottom:.25rem solid transparent}
+.gnav a:hover{border-bottom-color:var(--blue-900);background:var(--gray-50)}
+.gnav a:focus-visible{border-bottom-color:transparent}
+
+/* ===== Hero ===== */
+.hero{background:var(--blue-50);padding:3.5rem 0 4rem}
+.hero .grid{display:grid;grid-template-columns:1fr;gap:2rem}
+@media (min-width:768px){.hero .grid{grid-template-columns:7fr 5fr;gap:2rem;align-items:start}}
+.hero h1{font-size:clamp(2.75rem,8vw,4rem);line-height:1.3;font-weight:700;letter-spacing:.01em}
+.hero .sub-name{font-size:1.25rem;line-height:1.5;color:var(--gray-700);margin-top:.5rem}
+.hero .lead{margin-top:1.5rem;font-size:1.0625rem;line-height:1.8;max-width:38rem}
+.notice{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.5rem;padding:.75rem 1rem;background:var(--white);border:2px solid var(--green-800);border-radius:.5rem;color:var(--green-900);font-weight:700;line-height:1.5}
+.notice::before{content:"";width:.75rem;height:.75rem;border-radius:50%;background:var(--green-800);flex:none}
+.btns{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:3.5rem;min-width:8.5rem;padding:.75rem 1.5rem;border-radius:.5rem;font-size:1rem;font-weight:700;line-height:1.5;text-decoration:none!important;border:2px solid var(--blue-900);cursor:pointer}
+.btn.fill{background:var(--blue-900);color:var(--white)!important}
+.btn.fill:hover{background:var(--blue-1000);border-color:var(--blue-1000)}
+.btn.fill:active{background:var(--blue-1200);border-color:var(--blue-1200)}
+.btn.line{background:var(--white);color:var(--blue-900)!important}
+.btn.line:hover{background:var(--blue-50);color:var(--blue-1000)!important;border-color:var(--blue-1000)}
+.btn:focus-visible{outline:.25rem solid var(--black);outline-offset:.125rem;box-shadow:0 0 0 .125rem var(--yellow-300);background-color:inherit}
+.btn.fill:focus-visible{background:var(--blue-900)}
+.profile{background:var(--white);border:1px solid var(--blue-200);border-radius:.5rem;padding:1.5rem}
+.profile h2{font-size:1rem;font-weight:700;line-height:1.5;color:var(--gray-700);margin-bottom:.5rem}
+.profile dl{display:grid;grid-template-columns:1fr;gap:0}
+.profile dt{font-size:.875rem;color:var(--gray-700);margin-top:1rem;line-height:1.5}
+.profile dd{font-weight:700;line-height:1.55}
+.profile dd small{display:block;font-weight:400;color:var(--gray-700);font-size:.875rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.25rem}
+.chip{display:inline-block;font-size:.875rem;line-height:1.4;padding:.25rem .625rem;border:1px solid var(--gray-420);border-radius:.25rem;background:var(--white);color:var(--gray-900);font-weight:400}
+
+/* ===== Sections ===== */
+section{padding:4.5rem 0}
+section.alt{background:var(--gray-50)}
+h2.title{font-size:clamp(1.625rem,3.4vw,2rem);line-height:1.4;font-weight:700;margin-bottom:2rem;padding-left:1rem;border-left:.5rem solid var(--blue-900)}
+h3{font-size:1.25rem;line-height:1.5;font-weight:700}
+h4{font-size:1rem;line-height:1.5;font-weight:700}
+.meta{font-size:.875rem;line-height:1.6;color:var(--gray-700)}
+.label{display:inline-block;font-size:.875rem;font-weight:700;line-height:1.4;padding:.125rem .625rem;border-radius:.25rem;border:1px solid currentColor;white-space:nowrap}
+.label[data-tone="green"]{background:var(--green-50);color:var(--green-900)}
+.label[data-tone="blue"]{background:var(--blue-50);color:var(--blue-1000)}
+.label[data-tone="yellow"]{background:var(--yellow-50);color:var(--yellow-1100)}
+.label[data-tone="orange"]{background:var(--orange-50);color:var(--orange-900)}
+.label[data-tone="gray"]{background:var(--white);color:var(--gray-700)}
+
+
+.btn.md{min-height:3rem;min-width:6rem;padding:.5rem 1rem;font-size:.9375rem;gap:.5rem;text-align:left}
+.ext{display:inline-block;flex:none;width:.75rem;height:.75rem;border:2px solid currentColor;border-radius:1px;position:relative;margin-left:.125rem}
+.ext::after{content:"";position:absolute;right:-5px;top:-5px;width:.5rem;height:.5rem;background:linear-gradient(45deg,transparent 45%,currentColor 45% 55%,transparent 55%),var(--white);border-top:2px solid currentColor;border-right:2px solid currentColor}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr;gap:2rem}
+@media (min-width:768px){.about{grid-template-columns:8fr 4fr;gap:4rem}}
+.focus{background:var(--white);border:1px solid var(--gray-300);border-left:.5rem solid var(--blue-900);border-radius:.5rem;padding:1.25rem 1.5rem;margin-bottom:1.5rem}
+.focus h3{font-size:.875rem;color:var(--gray-700);font-weight:700;margin-bottom:.25rem}
+.focus p{font-size:1.125rem;font-weight:700;line-height:1.6}
+.about p.body+p.body{margin-top:1rem}
+.side h3{font-size:1rem;margin-bottom:.5rem}
+.side ul{margin-bottom:1.5rem;border-top:1px solid var(--gray-420)}
+.side li{padding:.5rem 0;border-bottom:1px solid var(--gray-300)}
+
+/* cards & lists */
+.cards{display:grid;grid-template-columns:1fr;gap:1.5rem}
+@media (min-width:768px){.cards{grid-template-columns:repeat(2,1fr)}.cards.c3{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--white);border:1px solid var(--gray-300);border-radius:.5rem;padding:1.5rem;display:flex;flex-direction:column;gap:.75rem}
+.card .desc{font-size:.9375rem}
+.card .foot{margin-top:auto;padding-top:.75rem;border-top:1px solid var(--gray-200);font-size:.875rem;color:var(--gray-700)}
+.card .yr{font-size:.875rem;font-weight:700;color:var(--gray-700)}
+
+/* publications */
+.pubgroup+.pubgroup{margin-top:2.5rem}
+.pubgroup h3{padding-bottom:.5rem;border-bottom:2px solid var(--gray-800)}
+.pubgroup li{display:grid;grid-template-columns:1fr;gap:.5rem;padding:1rem 0;border-bottom:1px solid var(--gray-300)}
+@media (min-width:768px){.pubgroup li{grid-template-columns:1fr 12rem;gap:1.5rem}.pubgroup .st{text-align:right}}
+.pubgroup .cite{font-size:.9375rem;line-height:1.75}
+.note{margin-top:1.5rem;font-size:.9375rem;color:var(--gray-700)}
+.subhead{margin-top:4rem}
+.talk{display:grid;grid-template-columns:1fr;gap:.5rem;padding:1rem 0;border-bottom:1px solid var(--gray-300)}
+.talks{border-top:2px solid var(--gray-800)}
+@media (min-width:768px){.talk{grid-template-columns:1fr 14rem;gap:1.5rem}.talk .side2{text-align:right}}
+.talk .org{font-size:.875rem;color:var(--gray-700)}
+.talk .ttl{font-weight:700;line-height:1.6}
+.talk .side2{font-size:.875rem;color:var(--gray-700)}
+
+/* experience */
+.jobs>li{display:grid;grid-template-columns:1fr;gap:.5rem 2rem;padding:1.5rem 0;border-bottom:1px solid var(--gray-420)}
+.jobs>li:first-child{border-top:2px solid var(--gray-800)}
+@media (min-width:768px){.jobs>li{grid-template-columns:13rem 1fr}}
+.jobs .when{font-weight:700;font-size:.9375rem;line-height:1.6}
+.jobs .when .label{margin-top:.5rem;display:table}
+.jobs p.desc{margin-top:.5rem}
+.jobs ul.bul{margin-top:.75rem;padding-left:1.25rem;list-style:disc}
+.jobs ul.bul li{padding:.125rem 0;font-size:.9375rem}
+
+/* education */
+.edu>li{display:grid;grid-template-columns:1fr;gap:.5rem 2rem;padding:1.5rem 0;border-bottom:1px solid var(--gray-420)}
+.edu>li:first-child{border-top:2px solid var(--gray-800)}
+@media (min-width:768px){.edu>li{grid-template-columns:13rem 1fr}}
+.edu .yr{font-weight:700;font-size:.9375rem}
+.lic{margin-top:3rem}
+.lic h3{margin-bottom:.5rem}
+.lic ul{border-top:1px solid var(--gray-420)}
+.lic li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.25rem 1.5rem;padding:.75rem 0;border-bottom:1px solid var(--gray-300)}
+.lic li span{color:var(--gray-700);font-size:.875rem}
+
+/* skills */
+.skillgrid{display:grid;grid-template-columns:1fr;gap:1.5rem}
+@media (min-width:768px){.skillgrid{grid-template-columns:repeat(3,1fr)}}
+.skillgrid .card{gap:.75rem}
+
+/* contact */
+.contactbox{max-width:44rem}
+.contactbox p+p{margin-top:.75rem}
+.linklist{margin-top:2rem;border-top:1px solid var(--gray-420)}
+.linklist li{padding:.75rem 0;border-bottom:1px solid var(--gray-300)}
+.updated{margin-top:1.5rem;font-size:.875rem;color:var(--gray-700)}
+
+/* footer */
+.site-footer{border-top:1px solid var(--gray-300);background:var(--gray-50);padding:2rem 0 2.5rem}
+.site-footer .n{font-weight:700;font-size:1.25rem;line-height:1.5}
+.site-footer .s{margin-top:.25rem;color:var(--gray-700);font-size:.9375rem}
+.site-footer .c{margin-top:1rem;font-size:.875rem;color:var(--gray-700)}
+.site-footer .top{margin-top:1rem;display:inline-block}
+
+@media (max-width:767px){section{padding:3rem 0}.hero{padding:2.5rem 0 3rem}.btn{width:100%}}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ / Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="top">
+      <a href="#top" class="brand" id="brand"><span id="brandMain">Hinano Seo</span><small id="brandSub">瀬尾ひなの</small></a>
+      <div class="langswitch" role="group" aria-label="言語 / Language">
+        <button type="button" data-l="ja" lang="ja">日本語</button>
+        <button type="button" data-l="en" lang="en">English</button>
+      </div>
+    </div>
+    <nav class="gnav" aria-label="ページ内メニュー"><ul id="navlinks"></ul></nav>
+  </div>
+</header>
+
+<main id="main"><noscript><div class="wrap" style="padding:2rem 1rem">This page requires JavaScript. / このページの表示にはJavaScriptが必要です。</div></noscript></main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="n">Hinano Seo / 瀬尾ひなの</div>
+    <div class="s" id="footSub"></div>
+    <a class="top" href="#top" id="toTop">ページの先頭へ</a>
+    <div class="c">© 2026 Hinano Seo</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var LANG = /^ja/i.test(navigator.language||"") ? "ja" : "en";
+
+var C = {
+nav:[["about",{en:"About",ja:"自己紹介"}],["research",{en:"Research",ja:"研究"}],["publications",{en:"Publications",ja:"業績"}],["experience",{en:"Experience",ja:"職歴"}],["skills",{en:"Skills",ja:"スキル"}],["contact",{en:"Contact",ja:"連絡先"}]],
+badges:[
+  ["b1",{en:"UNAIDS RST-AP Fellow",ja:"UNAIDS RST-AP フェロー"}],
+  ["b2",{en:"Nagasaki Univ. TMGH — MPH Graduate",ja:"長崎大学 TMGH — MPH 修了"}],
+  ["b3",{en:"Tobitate! 17th Cohort",ja:"トビタテ！17期生"}]
+],
+lead:{
+  en:"MPH graduate of Nagasaki University (September 2026). Researched perioperative safety and implementation of the WHO Surgical Safety Checklist in Lao PDR. Interested in health systems strengthening, implementation science, and global health diplomacy.",
+  ja:"長崎大学大学院 公衆衛生学修士（MPH）修了（2026年9月）。ラオスにおける周術期安全とWHO外科安全チェックリストの実装研究に取り組む。保健システム強化・実装科学・グローバルヘルス外交に関心。"
+},
+tags:["Global Health","Surgical Safety","Health Systems","Implementation Science","HIV/AIDS","Planetary Health"],
+btns:[["#research",{en:"View Research",ja:"研究を見る"},"fill"],["#contact",{en:"Contact",ja:"Contact"},"line"]],
+grad:{en:"🎓 Completed MPH — Sep 18, 2026",ja:"🎓 MPH 修了 — 2026年9月18日"},
+
+about:{
+  eyebrow:{en:"About",ja:"自己紹介"},
+  title:{en:"Bridging Health\nAcross Borders",ja:"健康を、国境を越えて"},
+  focusLabel:{en:"MPH Dissertation Topic",ja:"修士論文テーマ"},
+  focus:{
+    en:"Implementation of the WHO Surgical Safety Checklist at Champasak Provincial Hospital, Lao PDR — current use, barriers, and medical device management",
+    ja:"ラオス・チャンパサック県病院におけるWHO外科安全チェックリストの実装 — 利用実態・阻害要因と医療機器管理"
+  },
+  p1:{
+    en:"Working as a perioperative nurse at NCGM, Tokunoshima, and Yamato Tokushukai, I witnessed firsthand how resource disparities directly impact patient safety. This drove my transition to researching surgical safety in low- and middle-income countries (LMICs).",
+    ja:"看護師として国立国際医療研究センター・徳之島・大和徳洲会病院で周術期ケアに従事する中で、医療資源の格差が患者安全に直結することを実感。この問題意識から、低・中所得国（LMICs）における外科安全の研究へと転向した。"
+  },
+  p2:{
+    en:"In September 2026, I completed my MPH at Nagasaki University TMGH, alongside my work as a Fellow at UNAIDS RST-AP in Bangkok. My goal is to bridge research and practice in health systems strengthening, policy development, and global health diplomacy.",
+    ja:"2026年9月、長崎大学大学院 TMGH にて公衆衛生学修士（MPH）を修了。UNAIDS アジア太平洋地域支援チーム（RST-AP）のフェローとしてバンコクで勤務している。今後は、保健システム強化・政策立案・グローバルヘルス外交の分野で、研究と実務を橋渡しする役割を担いたいと考えている。"
+  },
+  lang:{en:"Languages",ja:"言語"},
+  langs:[{en:"Japanese / Native",ja:"日本語 / 母語"},{en:"English / Business",ja:"English / ビジネスレベル"},{en:"Thai / Basic",ja:"ภาษาไทย / 基礎"}],
+  areas:{en:"Areas",ja:"専門領域"},
+  areasList:["Global Health","Surgical Safety","Planetary Health","HIV/AIDS","Epidemiology","Field Research"]
+},
+
+research:{
+  eyebrow:{en:"Research",ja:"研究内容"},
+  title:{en:"Research &\nProjects",ja:"研究と\nプロジェクト"},
+  items:[
+   {bar:"c-verm",tag:{en:"Completed · MPH Dissertation",ja:"完了 · 修士論文"},
+    t:{en:"WHO Surgical Safety Checklist at Champasak Provincial Hospital, Lao PDR",ja:"ラオス・チャンパサック県病院におけるWHO外科安全チェックリストの利用実態と阻害要因"},
+    m:"Lao PDR · 2024–2026",
+    d:{en:"A mixed-methods study of current use of, and barriers to implementing, the WHO Surgical Safety Checklist at a Lao provincial hospital, including unit-level divergence after project introduction.",
+       ja:"ラオスの県病院におけるWHO外科安全チェックリストの利用実態と実装上の阻害要因を、混合研究法により分析。プロジェクト導入後の部署間のばらつきも検討。"},
+    f:{en:"Master of Public Health Dissertation, Nagasaki University, 2026",ja:"公衆衛生学修士論文・長崎大学・2026年"}},
+   {bar:"c-indigo",tag:{en:"Grant-funded Research",ja:"助成研究"},
+    link:{href:"https://www.jaame.or.jp/mdsi/activity/grant_list.html",label:{en:"View the JAAME grant list (Japanese)",ja:"医療機器センター 採択テーマ一覧を見る"}},
+    t:{en:"Status of Operating Theatre Equipment Implementation and Patient Safety in Regional Hospitals in Laos",ja:"ラオス地方病院における手術室機器の導入状況と医療安全の実態分析"},
+    m:"Lao PDR · 2024–2025",
+    d:{en:"Inadequate access to surgical care in LMICs contributes to over 5 million deaths annually. In rural Lao PDR, inadequate medical device maintenance poses serious risks to operating room safety.",
+       ja:"低・中所得国では外科ケアへのアクセス不足が年間500万人以上の死亡に関与しているとされる。ラオスの地方病院では医療機器の維持管理体制が不十分であり、手術室安全に深刻な影響を与えている。"},
+    f:{en:"JAAME Research Grant (Open-Call Research Paper), FY2025 (23rd cohort) — Medical Device Strategy Institute, Japan Association for the Advancement of Medical Equipment",ja:"調査研究助成【公募型リサーチペーパー】2025年度（第23期）採択 — 公益財団法人 医療機器センター 医療機器産業研究所"}},
+   {bar:"c-sage",tag:{en:"Presented",ja:"発表済み"},
+    t:{en:"Renewable Energy Development in Minamata City: Stakeholder Perspectives",ja:"水俣市における再生可能エネルギー開発：ステークホルダーの視点と課題"},
+    m:"Minamata, Japan · JAGH2025",
+    d:{en:"Minamata City, with its history of environmental health disaster (Minamata disease), is now recognized as a leader in renewable energy. This research examines the intersection of environmental justice and energy transition.",
+       ja:"水俣市は水俣病という環境・健康被害の歴史を持ちながら、現在は再生可能エネルギーの先進地として注目されている。環境正義とエネルギー転換の両立という観点から研究を実施。"},
+    f:{en:"JAGH2025 Poster — 40th Congress of the Japan Association for Global Health",ja:"JAGH2025 ポスター — 第40回日本国際保健医療学会学術大会"}},
+   {bar:"c-verm",tag:{en:"Completed",ja:"終了"},
+    link:{href:"https://planetaryhealthalliance.org/news/how-to-engage-students-in-intergenerational-justice-for-planetary-health-insights-from-nagasaki-universitys-future-design-workshop/",label:{en:"Read the article on Planetary Health Alliance",ja:"Planetary Health Alliance の記事を読む（英語）"}},
+    t:{en:"Planetary Health & Intergenerational Justice — Future Design Workshop",ja:"プラネタリーヘルスと世代間公正 — Future Design Workshop"},
+    m:"Nagasaki University · 2024–2025",
+    d:{en:"Climate change, biodiversity loss, and pollution pose severe threats to human health, raising urgent questions about intergenerational equity in resource distribution.",
+       ja:"気候変動・生物多様性喪失・汚染が人類の健康に与える影響は深刻であり、現世代と将来世代の間の公正な資源配分が問われている。"},
+    f:{en:"Planetary Health Alliance — Event Co-hosting / Nagasaki University",ja:"Planetary Health Alliance — イベント共催協力 / 長崎大学"}}
+  ]
+},
+
+pubs:{
+  eyebrow:{en:"Publications & Outputs",ja:"業績"},
+  title:{en:"Publications &\nOutputs",ja:"業績と\nアウトプット"},
+  items:[
+ {
+  "i": "🎓",
+  "bar": "c-verm",
+  "h": {
+   "en": "Master's Dissertation",
+   "ja": "修士論文"
+  },
+  "items": [
+   {
+    "c": "Seo H. Current Use and Barriers to Implementation of the WHO Surgical Safety Checklist: A Mixed-Methods Study at Champasak Provincial Hospital, Lao PDR. Master of Public Health Dissertation, Nagasaki University, 2026.",
+    "s": {
+     "en": "Completed · 2026",
+     "ja": "完了 · 2026"
+    }
+   }
+  ]
+ },
+ {
+  "i": "📄",
+  "bar": "c-indigo",
+  "h": {
+   "en": "Research Papers",
+   "ja": "論文"
+  },
+  "items": [
+   {
+    "c": "Seo H, Imoto A, Nalongsack S, Komatsu R. Barriers to Routine Use of the WHO Surgical Safety Checklist in a Lao Provincial Hospital: A Mixed-Methods Study.",
+    "s": {
+     "en": "In preparation",
+     "ja": "投稿準備中"
+    }
+   },
+   {
+    "c": "Seo H, Imoto A, Nalongsack S, Komatsu R. Hospital-Level Introduction, Unit-Level Divergence: Post-Project Enactment of the Surgical Safety Checklist in a Lao PDR Provincial Hospital.",
+    "s": {
+     "en": "In preparation",
+     "ja": "投稿準備中"
+    }
+   },
+   {
+    "c": "Seo H, Komatsu R. Research on the Status of Operating Theatre Equipment Implementation and the Current State of Patient Safety in Regional Hospitals in Laos. Medical Device Strategy Institute, Japan Association for the Advancement of Medical Equipment. (in Japanese)",
+    "s": {
+     "en": "Submitted",
+     "ja": "提出済み"
+    }
+   }
+  ]
+ },
+ {
+  "i": "🎤",
+  "bar": "c-sage",
+  "h": {
+   "en": "Conference Presentations",
+   "ja": "学会発表"
+  },
+  "items": [
+   {
+    "c": "Seo H, et al. Current Use and Barriers to Implementation of the WHO Surgical Safety Checklist: A Mixed-Methods Study at Champasak Provincial Hospital, Lao PDR. Global Health Joint Congress 2026, Japan.",
+    "s": {
+     "en": "Accepted",
+     "ja": "採択"
+    }
+   },
+   {
+    "c": "Seo H, et al. Closing the Last Mile: Toward Commercially Sustainable Medical Device Support in ASEAN's Peripheral Hospitals — Evidence from Lao PDR. Prince Mahidol Award Conference 2027, Bangkok, Thailand.",
+    "s": {
+     "en": "Abstract submitted",
+     "ja": "抄録提出済み"
+    }
+   },
+   {
+    "c": "Seo H, et al. Medical Device Lifecycle Management Through a Planetary Health Lens: A Mixed-Methods Study in Lao PDR. 15th National Health Research Forum, Lao PDR.",
+    "s": {
+     "en": "Abstract in preparation",
+     "ja": "抄録準備中"
+    }
+   },
+   {
+    "c": "Seo H, et al. Renewable Energy Development in Minamata City: Stakeholder Perspectives and Challenges. 40th Congress of the Japan Association for Global Health (JAGH2025), 2025. Poster.",
+    "s": {
+     "en": "Presented · 2025",
+     "ja": "発表済み · 2025"
+    }
+   }
+  ]
+ }
+],
+  note:{en:"ORCID, Google Scholar, and ResearchGate profiles are in preparation. For papers, abstracts, or slides, please contact via the Contact section.",
+        ja:"ORCID・Google Scholar・ResearchGateは準備中です。論文・抄録・スライドのご要望はContactよりお問い合わせください。"},
+  talksEyebrow:{en:"Presentations & Talks",ja:"発表・講演"},
+  talksTitle:{en:"Presentations &\nTalks",ja:"発表と\n講演"},
+  talks:[
+   {o:{en:"Planetary Health Alliance — Future Design Workshop",ja:"Planetary Health Alliance — Future Design Workshop"},
+    t:{en:"Intergenerational Justice and Planetary Health: Designing 2050",ja:"世代間公正とプラネタリーヘルス：2050年の未来を描く"},
+    y:"2024",p:{en:"Nagasaki University",ja:"長崎大学"},pill:{en:"FACILITATOR",ja:"ファシリテーター"}},
+   {o:{en:"Tobitate! Study Abroad JAPAN Official YouTube",ja:"トビタテ！留学JAPAN 公式YouTube"},
+    link:{href:"https://www.youtube.com/watch?v=KI7TUHQ0amQ",label:{en:"Watch on YouTube",ja:"YouTubeで動画を見る"}},
+    t:{en:"A Day in the Life of a Research Student in Laos 🇱🇦",ja:"【留学】ラオスで研究を行う留学生のリアルな1日 Vlog 🇱🇦"},
+    y:"2024",p:"Lao PDR",pill:{en:"MEDIA FEATURE",ja:"メディア掲載"}}
+  ]
+},
+
+exp:{
+  eyebrow:{en:"Experience & Projects",ja:"職歴・プロジェクト"},
+  title:{en:"Career\nJourney",ja:"キャリアの\n歩み"},
+  jobs:[
+   {cls:"now",tag:{en:"Fellowship",ja:"フェローシップ"},tc:"c-verm",
+    t:{en:"Fellow — UNAIDS Regional Support Team for Asia and the Pacific (RST-AP)",ja:"フェロー — UNAIDS アジア太平洋地域支援チーム（RST-AP）"},
+    m:{en:"UNAIDS RST-AP · Bangkok, Thailand",ja:"UNAIDS RST-AP · バンコク, タイ"},
+    w:{en:"Nov 2025 – Present",ja:"2025年11月 – 現在"},
+    d:{en:"Supporting the HIV/AIDS Data Hub. Applying epidemiology and statistical skills to regional health data analysis across Asia-Pacific.",ja:"HIV/AIDSデータハブを支援。疫学・統計スキルを活用したアジア太平洋地域の保健データ分析に従事。"},
+    b:[{en:"Regional health data analysis",ja:"地域保健データ分析"},{en:"HIV/AIDS epidemiology reports",ja:"HIV/AIDS疫学レポート作成"}]},
+   {cls:"done",tag:{en:"Education · Completed",ja:"学歴 · 修了"},tc:"c-gold",
+    t:{en:"MPH — School of Tropical Medicine and Global Health (TMGH)",ja:"MPH — 熱帯医学・グローバルヘルス研究科（TMGH）"},
+    m:{en:"Nagasaki University · Nagasaki, Japan",ja:"長崎大学 · 長崎, 日本"},
+    w:{en:"Apr 2024 – Sep 2026 (Completed Sep 18, 2026)",ja:"2024年4月 – 2026年9月（2026年9月18日 修了）"},
+    d:{en:"Master of Public Health (International Health Development). Research focus: surgical safety in LMICs. Conducted fieldwork in Lao PDR.",ja:"公衆衛生学修士（国際健康開発）。研究テーマ：低・中所得国における外科安全。ラオスでのフィールドワークを実施。"},
+    b:[{en:"MPH dissertation completed (Sep 2026)",ja:"MPH 修士論文 完成・修了（2026年9月）"},{en:"Lao PDR fieldwork",ja:"ラオスフィールドワーク"},{en:"JAGH2025 poster presentation",ja:"JAGH2025ポスター発表"},{en:"JAAME research grant adopted",ja:"医療機器センター研究助成採択"}]},
+   {tag:{en:"Full-time",ja:"正社員"},tc:"c-indigo",
+    t:{en:"Registered Nurse (OR & Sterilization)",ja:"看護師（手術室・滅菌管理）"},
+    m:{en:"National Center for Global Health and Medicine (NCGM) · Tokyo, Japan",ja:"国立国際医療研究センター（NCGM） · 東京, 日本"},
+    w:{en:"Apr 2022 – Mar 2024",ja:"2022年4月 – 2024年3月"},
+    d:{en:"OR nursing, sterilization management, central supply management. Certified as OR assistant for the da Vinci Surgical System.",ja:"手術室看護・滅菌管理・中央材料室管理。ダヴィンチ手術システムの手術室アシスタント認定取得。"},
+    b:[{en:"da Vinci surgical assistant certification",ja:"ダヴィンチ手術アシスタント認定"},{en:"Sterilization protocol development",ja:"滅菌管理プロトコル整備"}]},
+   {tag:{en:"Full-time",ja:"正社員"},tc:"c-indigo",
+    t:{en:"Registered Nurse (Perioperative & Endoscopy)",ja:"看護師（周術期・内視鏡）"},
+    m:{en:"Tokunoshima Tokushukai Hospital · Tokunoshima, Kagoshima, Japan",ja:"徳之島徳洲会病院 · 徳之島, 鹿児島, 日本"},
+    w:{en:"Apr 2021 – Mar 2022",ja:"2021年4月 – 2022年3月"},
+    d:{en:"Perioperative, catheterization, and endoscopy nursing in a remote island setting. Coordinated pre/post-operative care, developed safety protocols, managed intraoperative monitoring across specialties.",ja:"離島という遠隔地での周術期・カテーテル・内視鏡看護。術前・術後ケアの調整、安全プロトコルの作成、多科にわたる術中モニタリング管理を担当。"},
+    b:[{en:"Safety protocol development",ja:"安全プロトコル作成"},{en:"Remote healthcare coordination",ja:"遠隔地医療調整"}]},
+   {tag:{en:"Full-time",ja:"正社員"},tc:"c-indigo",
+    t:{en:"Registered Nurse (Section Leader, Plastic Surgery)",ja:"看護師（形成外科 セクションリーダー）"},
+    m:{en:"Yamato Tokushukai Hospital · Yamato, Kanagawa, Japan",ja:"大和徳洲会病院 · 大和市, 神奈川, 日本"},
+    w:{en:"Apr 2020 – Mar 2021",ja:"2020年4月 – 2021年3月"},
+    d:{en:"Specialized perioperative care in microsurgery, robotic surgery, and advanced surgery during COVID-19. As Section Leader, enhanced protocols, managed supplies, trained the team, and developed safety manuals.",ja:"COVID-19パンデミック下でのマイクロサージャリー・ロボット手術・高度外科手術の専門的周術期ケア。形成外科セクションリーダーとしてプロトコル改善・物品管理・チーム育成・安全マニュアル作成を担当。"},
+    b:[{en:"Section Leadership",ja:"セクションリーダー"},{en:"Safety manual development",ja:"安全マニュアル作成"},{en:"Team training",ja:"チーム育成"}]}
+  ]
+},
+
+skills:{
+  eyebrow:{en:"Skills",ja:"スキル"},
+  title:{en:"Skills &\nExpertise",ja:"スキルと\n専門性"},
+  groups:[
+   {i:"🔬",h:{en:"Research Methods",ja:"研究手法"},l:["Mixed Methods Research","Qualitative Research","Implementation Science","Participatory Action Research","Field Research","Survey Design"]},
+   {i:"📊",h:{en:"Analysis Tools",ja:"分析ツール"},l:["SPSS","Excel (Advanced)","NVivo","Canva","PowerPoint","Data Cleaning & Coding"]},
+   {i:"🌐",h:{en:"Languages",ja:"言語"},l:[{en:"Japanese (Native)",ja:"日本語（母語）"},{en:"English (Business)",ja:"英語（ビジネス）"},{en:"Thai (Basic)",ja:"タイ語（基礎）"}]},
+   {i:"🏥",h:{en:"Clinical & Professional",ja:"臨床・専門スキル"},l:[{en:"Perioperative Nursing",ja:"周術期看護"},{en:"Sterilization Management",ja:"滅菌管理"},{en:"da Vinci Surgical Assistant",ja:"ダヴィンチ手術アシスタント"},{en:"OR Safety Management",ja:"手術室安全管理"},{en:"Team Leadership",ja:"チームリーダーシップ"}]},
+   {i:"✨",h:{en:"Other",ja:"その他"},l:[{en:"Facilitation",ja:"ファシリテーション"},{en:"Stakeholder Engagement",ja:"ステークホルダー調整"},{en:"Field Coordination",ja:"フィールドコーディネーション"},{en:"PR & Social Media",ja:"広報・SNS管理"},"PCM (Project Cycle Management)"]}
+  ]
+},
+
+edu:{
+  eyebrow:{en:"Education",ja:"学歴"},
+  title:{en:"Academic\nBackground",ja:"学術的\nバックグラウンド"},
+  items:[
+   {y:{en:"APR 2024 – SEP 2026",ja:"2024年4月 – 2026年9月"},
+    t:{en:"Master of Public Health (MPH)",ja:"公衆衛生学修士（MPH）"},
+    s:{en:"International Health Development",ja:"国際健康開発"},
+    o:{en:"Nagasaki University, School of Tropical Medicine and Global Health (TMGH)",ja:"長崎大学 熱帯医学・グローバルヘルス研究科（TMGH）"},
+    x:{en:"Japan's first graduate school specializing in tropical medicine and global health",ja:"日本初の熱帯医学・グローバルヘルス専門大学院"},
+    g:{en:"Degree completed — Sep 18, 2026",ja:"2026年9月18日 修了"}},
+   {y:{en:"APR 2016 – MAR 2020",ja:"2016年4月 – 2020年3月"},
+    t:{en:"Bachelor of Science in Nursing",ja:"学士（看護学）"},
+    s:{en:"Nursing — International Cooperation for LMICs",ja:"看護学科 — 国際協力・LMICs専攻"},
+    o:{en:"Sophia University",ja:"上智大学"},
+    x:{en:"PR Director, MEGUKO Volunteer Club (4 years) — Financial aid for 2,000 children in India and the Philippines",ja:"MEGUKO ボランティアクラブ 広報責任者（4年間）— インド・フィリピンの2,000人の子供への支援活動"}}
+  ],
+  licH:{en:"Licenses & Certifications",ja:"資格・認定"},
+  lic:[
+   [{en:"JAGH2025 Participation Certificate",ja:"JAGH2025 参加認定"},{en:"Japan Association for Global Health · 2025",ja:"日本国際保健医療学会 · 2025"}],
+   [{en:"WSDN2024 Participation Certificate",ja:"WSDN2024 参加認定"},{en:"World Surgical Day Network · 2024",ja:"世界外科安全デーネットワーク · 2024"}],
+   [{en:"PCM (Project Cycle Management) — Advanced",ja:"PCM (Project Cycle Management) — Advanced"},{en:"JICA-affiliated Organization · 2024",ja:"JICA関連機関 · 2024"}],
+   [{en:"PCM (Project Cycle Management) — Basic",ja:"PCM (Project Cycle Management) — Basic"},{en:"JICA-affiliated Organization · 2023",ja:"JICA関連機関 · 2023"}],
+   [{en:"da Vinci Surgical System OR Assistant Certification",ja:"ダヴィンチ手術システム 手術室アシスタント認定"},{en:"NCGM · 2023",ja:"国立国際医療研究センター · 2023"}],
+   [{en:"Registered Nurse License",ja:"看護師免許"},{en:"Ministry of Health, Labour and Welfare, Japan · 2020",ja:"厚生労働省 · 2020"}]
+  ]
+},
+
+awards:{
+  eyebrow:{en:"Grants, Scholarships & Awards",ja:"助成・奨学金・受賞"},
+  title:{en:"Awards &\nFellowships",ja:"受賞と\nフェローシップ"},
+  items:[
+   {bar:"c-verm",y:"2025",t:{en:"UNAIDS RST-AP Fellowship",ja:"UNAIDS RST-AP フェローシップ"},o:{en:"UNAIDS Regional Support Team for Asia-Pacific",ja:"UNAIDS アジア太平洋地域支援チーム"},d:{en:"Selected as Fellow to support the HIV/AIDS Data Hub in Bangkok.",ja:"HIV/AIDSデータハブ支援フェローとしてバンコクに派遣。"},f:{en:"Fellowship",ja:"フェローシップ"}},
+   {bar:"c-gold",y:"2025",link:{href:"https://www.jaame.or.jp/mdsi/activity/grant_list.html",label:{en:"View the JAAME grant list (Japanese)",ja:"医療機器センター 採択テーマ一覧を見る"}},t:{en:"JAAME Research Grant — Open-Call Research Paper (23rd Cohort)",ja:"医療機器センター 調査研究助成【公募型リサーチペーパー】（第23期）"},o:{en:"Medical Device Strategy Institute, Japan Association for the Advancement of Medical Equipment (JAAME)",ja:"公益財団法人 医療機器センター 医療機器産業研究所"},d:{en:"Adopted for 'Research on the Status of Operating Theatre Equipment Implementation and the Current State of Patient Safety in Regional Hospitals in Laos.'",ja:"「ラオス地方病院における手術室機器の導入状況と医療安全の実態分析」が採択。"},f:{en:"Research Grant",ja:"研究助成"}},
+   {bar:"c-sage",y:"2024",link:{href:"https://tobitate-mext.jasso.go.jp/zukan/detail-3816",label:{en:"View my profile on Tobitate Zukan (Japanese)",ja:"留学大図鑑のプロフィールを見る"}},t:{en:"Tobitate! Study Abroad JAPAN — 17th Cohort",ja:"トビタテ！留学JAPAN 第17期生"},o:{en:"Ministry of Education, Culture, Sports, Science and Technology (MEXT)",ja:"文部科学省"},d:{en:"Scholarship for global health fieldwork research in Lao PDR.",ja:"ラオスでのグローバルヘルスフィールドワーク研究のための留学奨学金。"},f:{en:"Scholarship",ja:"奨学金"}},
+   {bar:"c-indigo",y:"2024",t:{en:"Planetary Health Alliance — Event Co-hosting Support",ja:"Planetary Health Alliance — イベント共催協力"},o:"Planetary Health Alliance",d:{en:"Participated in co-hosting and operational support for Planetary Health Alliance events at Nagasaki University. Supported planetary health education and advocacy activities.",ja:"長崎大学にてPlanetary Health Allianceが主催するイベントの共催・運営サポートに参加。プラネタリーヘルスの教育・啓発活動を支援。"},f:{en:"Collaboration",ja:"活動協力"}}
+  ]
+},
+
+teach:{
+  eyebrow:{en:"Teaching & Mentoring",ja:"教育・メンタリング"},
+  title:{en:"Teaching &\nCommunity",ja:"教育と\nコミュニティ"},
+  items:[
+   {i:"🎓",t:{en:"Research Assistant (RA) Training in Lao PDR",ja:"ラオス現地研究アシスタント（RA）育成"},y:"2024",r:{en:"Research Supervisor",ja:"研究指導者"},d:{en:"During fieldwork in Lao PDR, trained local research assistants in research ethics, data collection methods, and interview techniques.",ja:"ラオスでのフィールドワーク中、現地研究アシスタントに対して研究倫理・データ収集手法・インタビュー技術のトレーニングを実施。"}},
+   {i:"📋",t:{en:"OR Safety Workshop for Nurses — Curriculum Development & Facilitation",ja:"看護師向け手術室安全ワークショップ（教材作成・実施）"},y:"2024",r:{en:"Curriculum Developer & Facilitator",ja:"教材作成者・ファシリテーター"},d:{en:"Developed and facilitated an OR safety workshop for nurses in Lao PDR, focusing on WHO Surgical Safety Checklist implementation and medical device management.",ja:"ラオスの医療安全向上を目的に、看護師向けの手術室安全ワークショップの教材を作成・実施。WHO外科安全チェックリストの活用方法と医療機器管理を中心に構成。"}},
+   {i:"🤝",t:{en:"MEGUKO Volunteer Club — PR Director & Mentoring",ja:"MEGUKO ボランティアクラブ 広報責任者・後輩育成"},y:"2016–2020",r:{en:"PR Director",ja:"広報責任者"},d:{en:"Led mentoring, SNS management, PR activities, and parent coordination at Sophia University's volunteer club for 4 years, supporting 2,000 children in India and the Philippines.",ja:"上智大学のボランティアクラブにて4年間、後輩の育成・SNS管理・広報活動・保護者との連携を担当。インド・フィリピンの2,000人の子供への支援活動を推進。"}}
+  ]
+},
+
+cv:{
+  eyebrow:"CV",
+  title:{en:"Download\nMy CV",ja:"履歴書を\nダウンロード"},
+  d:{en:"CV available in English and Japanese. For the latest version, please contact via the Contact section.",ja:"英語版・日本語版のCVをご用意しています。最新版はContactよりお問い合わせください。"},
+  upd:"Last updated: September 2026",
+  btn:[{en:"🇬🇧 Request CV (English)",ja:"🇬🇧 英語版 CV をリクエスト"},{en:"🇯🇵 Request CV (Japanese)",ja:"🇯🇵 日本語版 CV をリクエスト"}]
+},
+
+contact:{
+  eyebrow:"Contact",
+  title:{en:"Get in Touch",ja:"お問い合わせ"},
+  d:{en:"For inquiries about research, collaboration, or global health, please feel free to reach out.",ja:"研究・コラボレーション・グローバルヘルスに関するご相談など、お気軽にご連絡ください。"},
+  btn:{en:"LinkedIn",ja:"LinkedIn"},
+  links:[["🎓 TMGH Nagasaki","https://www.tmgh.nagasaki-u.ac.jp/"],["▶ Tobitate! YouTube","https://www.youtube.com/@tobitate_mext"],["🌍 Planetary Health Alliance","https://planetaryhealthalliance.org/"]]
+},
+foot:{en:"UNAIDS RST-AP Fellow · Nagasaki University TMGH MPH Graduate · Tobitate! 17th Cohort",ja:"UNAIDS RST-AP フェロー · 長崎大学 TMGH MPH 修了 · トビタテ！17期生"}
+};
+
+
+/* ---------- helpers ---------- */
+function t(v){ return (v && typeof v==="object") ? v[LANG] : v; }
+function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];}); }
+function flat(v){ var s=t(v); return LANG==="ja" ? s.replace(/\n/g,"") : s.replace(/\n/g," "); }
+var TONE={"c-verm":"green","c-indigo":"blue","c-sage":"gray","c-gold":"yellow"};
+function label(text,tone){ return '<span class="label" data-tone="'+tone+'">'+esc(text)+'</span>'; }
+function statusTone(en){ return /Completed|Accepted|Presented/.test(en)?"green":(/Submitted/.test(en)?"blue":"yellow"); }
+function chips(arr){ return '<div class="chips">'+arr.map(function(x){return '<span class="chip">'+esc(t(x))+'</span>';}).join("")+'</div>'; }
+function sec(id,title,body,alt){
+  return '<section id="'+id+'"'+(alt?' class="alt"':'')+' aria-labelledby="h-'+id+'"><div class="wrap"><h2 class="title" id="h-'+id+'">'+esc(flat(title))+'</h2>'+body+'</div></section>';
+}
+var UI={
+  facts:{en:"Profile",ja:"プロフィール"},
+  degree:{en:"Degree",ja:"学位"},
+  degreeV:{en:"Master of Public Health (MPH)",ja:"公衆衛生学修士（MPH）"},
+  degreeS:{en:"Nagasaki University TMGH · Completed Sep 18, 2026",ja:"長崎大学 TMGH · 2026年9月18日 修了"},
+  role:{en:"Current role",ja:"現在の所属"},
+  roleV:{en:"Fellow, UNAIDS RST-AP",ja:"UNAIDS RST-AP フェロー"},
+  roleS:{en:"Bangkok, Thailand",ja:"バンコク, タイ"},
+  sch:{en:"Scholarship",ja:"奨学金"},
+  schV:{en:"Tobitate! Study Abroad JAPAN, 17th Cohort",ja:"トビタテ！留学JAPAN 第17期生"},
+  fields:{en:"Fields",ja:"専門分野"},
+  gnavLabel:{en:"Page menu",ja:"ページ内メニュー"},
+  top:{en:"Back to top",ja:"ページの先頭へ"},
+  skip:{en:"Skip to main content",ja:"本文へスキップ"},
+  ext:{en:"(opens in a new tab)",ja:"（新しいタブで開きます）"},
+  lang:{en:"Languages",ja:"言語"}
+};
+
+/* ---------- render ---------- */
+function render(){
+  document.documentElement.lang = LANG;
+  document.querySelectorAll(".langswitch button").forEach(function(b){ b.setAttribute("aria-pressed", b.dataset.l===LANG ? "true":"false"); });
+  document.querySelector(".gnav").setAttribute("aria-label", t(UI.gnavLabel));
+  document.getElementById("toTop").textContent = t(UI.top);
+  document.getElementById("footSub").textContent = t(C.foot);
+  document.getElementById("brandMain").textContent = LANG==="ja" ? "瀬尾 ひなの" : "Hinano Seo";
+  document.getElementById("brandSub").textContent  = LANG==="ja" ? "Hinano Seo" : "瀬尾ひなの";
+  document.getElementById("navlinks").innerHTML = C.nav.map(function(n){return '<li><a href="#'+n[0]+'">'+esc(t(n[1]))+'</a></li>';}).join("");
+
+  var h="";
+
+  /* hero */
+  var nameMain = LANG==="ja" ? "瀬尾 ひなの" : "Hinano Seo";
+  var nameSub  = LANG==="ja" ? "Hinano Seo" : "瀬尾 ひなの";
+  h+='<div class="hero" id="top"><div class="wrap"><div class="grid"><div>'+
+     '<h1 id="pagetitle">'+esc(nameMain)+'</h1><p class="sub-name" lang="'+(LANG==="ja"?"en":"ja")+'">'+esc(nameSub)+'</p>'+
+     '<p class="lead">'+esc(t(C.lead))+'</p>'+
+     '<p class="notice">'+esc(t(C.grad).replace(/^\S+\s*/,""))+'</p>'+
+     '<div class="btns"><a class="btn fill" href="#research">'+esc(t(C.btns[0][1]))+'</a><a class="btn line" href="#contact">'+esc(LANG==="ja"?"連絡先":"Contact")+'</a></div>'+
+     '</div>'+
+     '<aside class="profile" aria-labelledby="h-profile"><h2 id="h-profile">'+esc(t(UI.facts))+'</h2><dl>'+
+       '<dt>'+esc(t(UI.degree))+'</dt><dd>'+esc(t(UI.degreeV))+'<small>'+esc(t(UI.degreeS))+'</small></dd>'+
+       '<dt>'+esc(t(UI.role))+'</dt><dd>'+esc(t(UI.roleV))+'<small>'+esc(t(UI.roleS))+'</small></dd>'+
+       '<dt>'+esc(t(UI.sch))+'</dt><dd>'+esc(t(UI.schV))+'</dd>'+
+       '<dt>'+esc(t(UI.fields))+'</dt><dd>'+chips(C.tags)+'</dd>'+
+     '</dl></aside></div></div></div>';
+
+  /* about */
+  var A=C.about;
+  h+=sec("about",A.title,
+    '<div class="about"><div><div class="focus"><h3>'+esc(t(A.focusLabel))+'</h3><p>'+esc(t(A.focus))+'</p></div>'+
+    '<p class="body">'+esc(t(A.p1))+'</p><p class="body">'+esc(t(A.p2))+'</p></div>'+
+    '<div class="side"><h3>'+esc(t(A.lang))+'</h3><ul>'+A.langs.map(function(l){return '<li>'+esc(t(l))+'</li>';}).join("")+'</ul>'+
+    '<h3>'+esc(t(A.areas))+'</h3><ul>'+A.areasList.map(function(l){return '<li>'+esc(l)+'</li>';}).join("")+'</ul></div></div>');
+
+  /* research */
+  var R=C.research;
+  h+=sec("research",R.title,'<div class="cards">'+R.items.map(function(x){
+    return '<article class="card"><div>'+label(t(x.tag),TONE[x.bar]||"gray")+'</div><h3>'+esc(t(x.t))+'</h3><p class="meta">'+esc(x.m)+'</p><p class="desc">'+esc(t(x.d))+'</p>'+(x.link?'<div><a class="btn line md" href="'+esc(x.link.href)+'" target="_blank" rel="noopener">'+esc(t(x.link.label))+'<span class="ext" aria-hidden="true"></span><span class="sr-only">'+esc(t(UI.ext))+'</span></a></div>':'')+'<p class="foot">'+esc(t(x.f))+'</p></article>';
+  }).join("")+'</div>',true);
+
+  /* publications */
+  var P=C.pubs;
+  h+=sec("publications",P.title,
+    P.items.map(function(g){
+      return '<div class="pubgroup"><h3>'+esc(t(g.h))+'</h3><ol>'+g.items.map(function(x){
+        return '<li><p class="cite" lang="en">'+esc(x.c)+'</p><p class="st">'+label(t(x.s),statusTone(x.s.en))+'</p></li>';
+      }).join("")+'</ol></div>';
+    }).join("")+
+    '<p class="note">'+esc(t(P.note))+'</p>'+
+    '<h3 class="subhead" style="font-size:1.5rem;margin-bottom:1rem">'+esc(flat(P.talksTitle))+'</h3><ul class="talks">'+
+    P.talks.map(function(x){return '<li class="talk"><div><p class="org">'+esc(t(x.o))+'</p><p class="ttl">'+esc(t(x.t))+'</p>'+(x.link?'<p style="margin-top:.75rem"><a class="btn line md" href="'+esc(x.link.href)+'" target="_blank" rel="noopener">'+esc(t(x.link.label))+'<span class="ext" aria-hidden="true"></span><span class="sr-only">'+esc(t(UI.ext))+'</span></a></p>':'')+'</div><div class="side2"><p>'+esc(x.y)+' · '+esc(t(x.p))+'</p><p style="margin-top:.25rem">'+label(t(x.pill),"gray")+'</p></div></li>';}).join("")+
+    '</ul>');
+
+  /* experience */
+  var E=C.exp;
+  h+=sec("experience",E.title,'<ol class="jobs">'+E.jobs.map(function(j){
+    var tone = j.cls==="now" ? "green" : (j.cls==="done" ? "blue" : "gray");
+    return '<li><div class="when">'+esc(t(j.w))+'<br>'+label(t(j.tag),tone)+'</div><div><h3>'+esc(t(j.t))+'</h3><p class="meta">'+esc(t(j.m))+'</p><p class="desc">'+esc(t(j.d))+'</p><ul class="bul">'+j.b.map(function(b){return '<li>'+esc(t(b))+'</li>';}).join("")+'</ul></div></li>';
+  }).join("")+'</ol>',true);
+
+  /* skills */
+  var S=C.skills;
+  h+=sec("skills",S.title,'<div class="skillgrid">'+S.groups.map(function(g){
+    return '<div class="card"><h3 style="font-size:1.0625rem">'+esc(t(g.h))+'</h3>'+chips(g.l)+'</div>';
+  }).join("")+'</div>');
+
+  /* education */
+  var D=C.edu;
+  h+=sec("education",D.title,'<ol class="edu">'+D.items.map(function(x){
+    return '<li><div class="yr">'+esc(t(x.y))+'</div><div><h3>'+esc(t(x.t))+'</h3><p>'+esc(t(x.s))+'</p><p>'+esc(t(x.o))+'</p><p class="meta">'+esc(t(x.x))+'</p>'+(x.g?'<p style="margin-top:.5rem">'+label(t(x.g),"green")+'</p>':'')+'</div></li>';
+  }).join("")+'</ol><div class="lic"><h3>'+esc(t(D.licH))+'</h3><ul>'+D.lic.map(function(l){return '<li>'+esc(t(l[0]))+'<span>'+esc(t(l[1]))+'</span></li>';}).join("")+'</ul></div>',true);
+
+  /* awards */
+  var W=C.awards;
+  h+=sec("awards",W.title,'<div class="cards">'+W.items.map(function(x){
+    return '<article class="card"><p class="yr">'+esc(x.y)+' · '+esc(t(x.f))+'</p><h3>'+esc(t(x.t))+'</h3><p class="meta">'+esc(t(x.o))+'</p><p class="desc">'+esc(t(x.d))+'</p>'+(x.link?'<div><a class="btn line md" href="'+esc(x.link.href)+'" target="_blank" rel="noopener">'+esc(t(x.link.label))+'<span class="ext" aria-hidden="true"></span><span class="sr-only">'+esc(t(UI.ext))+'</span></a></div>':'')+'</article>';
+  }).join("")+'</div>');
+
+  /* teaching */
+  var T=C.teach;
+  h+=sec("teaching",T.title,'<div class="cards c3">'+T.items.map(function(x){
+    return '<article class="card"><p class="yr">'+esc(x.y)+' · '+esc(t(x.r))+'</p><h3>'+esc(t(x.t))+'</h3><p class="desc">'+esc(t(x.d))+'</p></article>';
+  }).join("")+'</div>',true);
+
+  /* contact (incl. CV note) */
+  var K=C.contact, V=C.cv;
+  h+=sec("contact",K.title,
+    '<div class="contactbox"><p>'+esc(t(K.d))+'</p><p>'+esc(t(V.d))+'</p>'+
+    '<div class="btns"><a class="btn fill" href="https://www.linkedin.com/in/hinano-seo-962581252" target="_blank" rel="noopener">LinkedIn<span class="sr-only">'+esc(t(UI.ext))+'</span></a></div>'+
+    '<ul class="linklist">'+K.links.map(function(l){return '<li><a href="'+l[1]+'" target="_blank" rel="noopener">'+esc(l[0].replace(/^\S+\s/,""))+'<span class="sr-only">'+esc(t(UI.ext))+'</span></a></li>';}).join("")+'</ul>'+
+    '<p class="updated">'+esc(V.upd)+'</p></div>');
+
+  document.getElementById("main").innerHTML = h;
+  document.getElementById("main").setAttribute("aria-labelledby","pagetitle");
+}
+
+document.querySelectorAll(".langswitch button").forEach(function(b){
+  b.addEventListener("click",function(){ LANG=b.dataset.l; render(); });
+});
+render();
+})();
+</script>
+</body>
+</html>

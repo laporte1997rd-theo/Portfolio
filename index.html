@@ -623,7 +623,10 @@ function render(){
   var K=C.contact, V=C.cv;
   h+=sec("contact",K.title,
     '<div class="contactbox"><p>'+esc(t(K.d))+'</p><p>'+esc(t(V.d))+'</p>'+
-    '<div class="btns"><a class="btn fill" href="https://www.linkedin.com/in/hinano-seo-962581252" target="_blank" rel="noopener">LinkedIn<span class="sr-only">'+esc(t(UI.ext))+'</span></a></div>'+
+   '<div class="btns">'+
+  '<a class="btn fill" href="mailto:hinanoseo.1103@gmail.com?subject=Inquiry%20from%20Hinano%20Seo%20Portfolio&body=Dear%20Hinano%20Seo%2C%0D%0A%0D%0AI%20am%20contacting%20you%20regarding%3A%0D%0A%0D%0A">Email</a>'+
+  '<a class="btn line" href="https://www.linkedin.com/in/hinano-seo-962581252" target="_blank" rel="noopener">LinkedIn<span class="sr-only">'+esc(t(UI.ext))+'</span></a>'+
+'</div>'+
     '<ul class="linklist">'+K.links.map(function(l){return '<li><a href="'+l[1]+'" target="_blank" rel="noopener">'+esc(l[0].replace(/^\S+\s/,""))+'<span class="sr-only">'+esc(t(UI.ext))+'</span></a></li>';}).join("")+'</ul>'+
     '<p class="updated">'+esc(V.upd)+'</p></div>');
 
